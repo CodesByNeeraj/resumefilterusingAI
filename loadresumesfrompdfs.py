@@ -10,6 +10,7 @@ def load_full_resumes_from_pdfs(pdf_folder):
             pages = loader.load() #loads the pages of the pdf and returns a list of document objects, one per page
             full_text = "\n".join([page.page_content for page in pages])   #combines the text from all pages into a single string with newlines between pages
             all_docs.append(Document(page_content=full_text, metadata={"source": filename})) #creates a new document with the entire text of the resume and saves filename for future reference
+            print(len(all_docs))
     return all_docs
 
 
