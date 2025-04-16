@@ -1,6 +1,6 @@
 # Import functions from other files
 from summarizecandidatefit import summarize_candidate_fit
-from chromadatabase import create_db  # Import create_db function
+from createvectordatabase import create_db  # Import create_db function
 
 def query_job_description(job_description, db, k=2):
     print(f"\n🔎 Querying resumes for job: {job_description}\n")
@@ -30,3 +30,6 @@ if __name__ == "__main__":
     db = create_db()  # Initialize the database
     job_description = "Looking for someone who knows C++ and has good leadership skills"
     query_job_description(job_description, db)  # Perform the query
+    
+    
+    
