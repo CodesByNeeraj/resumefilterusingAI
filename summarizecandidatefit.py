@@ -1,8 +1,8 @@
 from openai import OpenAI
 from langchain.chat_models import ChatOpenAI #wrapper that lets you use chatgpt like models
 #A wrapper function is a function in a software library or a computer program whose main purpose is to call a second subroutine or a system call with little or no additional computation. 
-
-llm = ChatOpenAI(openai_api_key="add ur own key here", temperature=0)  # Add `openai_api_key=...` if needed
+from secret_key import secret_key
+llm = ChatOpenAI(openai_api_key=secret_key, temperature=0)  # Add `openai_api_key=...` if needed
 #temperature = 0 to return more deterministic and focused responses (good for consistent evaluations
 
 def summarize_candidate_fit(content, job_description):
