@@ -26,19 +26,26 @@
 
 ## Clone the Repository
 Open a terminal and run the following command to clone the repository to your local machine:
-cd "navigate to your preferred folder where you want to clone the project at"
-git clone https://github.com/your-username/your-repo-name.git
+
+### cd "navigate to your preferred folder where you want to clone the project at"
+
+### git clone https://github.com/your-username/your-repo-name.git
 
 ## Run the setup.sh script
 The setup.sh script will install all necessary dependencies and set up the environment.
 Make sure the script has execution permissions. You can run:
-chmod +x setup.sh
+
+### chmod +x setup.sh
+
 Then, execute the script:
-./setup.sh
+
+### ./setup.sh
 
 ## Run the Streamlit App
 After running the setup.sh script, you can launch the Streamlit app with the following command:
-streamlit run main.py
+
+### streamlit run main.py
 This will start the Streamlit server, and you should see an output similar to:
+
 Local URL: http://localhost:8501
 Network URL: http://<your-local-ip>:8501
